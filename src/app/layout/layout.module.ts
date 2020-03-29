@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LayoutRoutingModule } from './layout-routing.module';
 
 import {  MatButtonModule } from '@angular/material/button';
 import {  MatInputModule } from '@angular/material/input';
@@ -17,6 +18,7 @@ import {  MatCardModule} from '@angular/material/card';
 import {  MatChipsModule } from '@angular/material/chips';
 import {  MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSidenavModule } from '@angular/material/sidenav';
 import { JavascriptComponent } from './javascript/javascript.component';
 import { HtmlfiveComponent } from './htmlfive/htmlfive.component';
 import { CssthreeComponent } from './cssthree/cssthree.component';
@@ -28,7 +30,17 @@ import { MongodbComponent } from './mongodb/mongodb.component';
 import { ExpressComponent } from './express/express.component';
 
 @NgModule({
-  declarations: [JavascriptComponent, HtmlfiveComponent, CssthreeComponent, JqueryComponent, BootstrapfourComponent, AngularComponent, NodejsComponent, MongodbComponent, ExpressComponent],
+  declarations: [
+    JavascriptComponent,
+    HtmlfiveComponent,
+    CssthreeComponent,
+    JqueryComponent,
+    BootstrapfourComponent,
+    AngularComponent,
+    NodejsComponent,
+    MongodbComponent,
+    ExpressComponent
+  ],
   imports: [
     CommonModule,
     MatButtonModule,
@@ -46,7 +58,9 @@ import { ExpressComponent } from './express/express.component';
     MatCardModule,
     MatChipsModule,
     MatAutocompleteModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule,
+    LayoutRoutingModule
   ],
   exports: [
     CommonModule,
@@ -66,6 +80,7 @@ import { ExpressComponent } from './express/express.component';
     MatChipsModule,
     MatAutocompleteModule,
     MatIconModule,
+    MatSidenavModule,
     JavascriptComponent
   ]
 })
