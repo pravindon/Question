@@ -18,9 +18,17 @@ import {  MatChipsModule } from '@angular/material/chips';
 import {  MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatIconModule } from '@angular/material/icon';
 import { JavascriptComponent } from './javascript/javascript.component';
+import { HtmlfiveComponent } from './htmlfive/htmlfive.component';
+import { CssthreeComponent } from './cssthree/cssthree.component';
+import { JqueryComponent } from './jquery/jquery.component';
+import { BootstrapfourComponent } from './bootstrapfour/bootstrapfour.component';
+import { AngularComponent } from './angular/angular.component';
+import { NodejsComponent } from './nodejs/nodejs.component';
+import { MongodbComponent } from './mongodb/mongodb.component';
+import { ExpressComponent } from './express/express.component';
 
 @NgModule({
-  declarations: [JavascriptComponent],
+  declarations: [JavascriptComponent, HtmlfiveComponent, CssthreeComponent, JqueryComponent, BootstrapfourComponent, AngularComponent, NodejsComponent, MongodbComponent, ExpressComponent],
   imports: [
     CommonModule,
     MatButtonModule,
