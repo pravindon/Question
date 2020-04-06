@@ -28,6 +28,7 @@ import { AngularComponent } from './angular/angular.component';
 import { NodejsComponent } from './nodejs/nodejs.component';
 import { MongodbComponent } from './mongodb/mongodb.component';
 import { ExpressComponent } from './express/express.component';
+import { MyGenderPipePipe } from './my-gender-pipe.pipe';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ExpressComponent } from './express/express.component';
     AngularComponent,
     NodejsComponent,
     MongodbComponent,
-    ExpressComponent
+    ExpressComponent,
+    MyGenderPipePipe
   ],
   imports: [
     CommonModule,
@@ -81,7 +83,8 @@ import { ExpressComponent } from './express/express.component';
     MatAutocompleteModule,
     MatIconModule,
     MatSidenavModule,
-    JavascriptComponent
+    JavascriptComponent,
+    MyGenderPipePipe
   ]
 })
 export class LayoutModule {}

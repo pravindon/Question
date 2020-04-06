@@ -16,6 +16,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     LayoutModule,
     MatExpansionModule
   ],
+  exports: [],
   providers: [],
   bootstrap: [AppComponent]
 })
